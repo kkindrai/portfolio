@@ -1,0 +1,481 @@
+<!-- 
+    ========================================================================================================================================================
+    THE HEADER AND PAGE OPENING INFO
+    AND ALL OF THE COOL THINGS
+    THAT GO INTO IT. 
+    ========================================================================================================================================================    
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Title Element. Format = PAGE NAME | Site Name -->
+        <title>Plots | Willow Gardens</title>
+        
+        <!-- Meta Description Tag | Should be distinct for each page -->
+        <meta name="description" content="Learn about Plots provided by Willow Gardens.">
+
+        <!-- Defining the Charset -->
+        <meta charset="UTF-8">
+
+        <!-- Google Font Embed (Handlee) | Belongs Before our Site's Style Sheet-->
+            <!-- Get Ready to Connect to this site (Improves Speeds) -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+            <!-- Load this font FROM that site -->
+            <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+
+        <!-- Adding CSS Elements -->
+            <!-- Adding Bootstrap CSS -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+                rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+                crossorigin="anonymous">
+            
+            <!-- Linking our site's CSS Page -->
+            <link rel="stylesheet" href="css/main.css">
+            <!-- Linking Page Specific CSS -->
+            <link rel="stylesheet" href="css/plot.css">
+    </head>
+
+<!-- 
+    ========================================================================================================================================================
+    THE BODY ELEMENT
+    AND ALL THE THINGS THAT 
+    GO IN IT. 
+    ========================================================================================================================================================    
+-->
+
+<body>
+     <!-- 
+        ===========================================================
+                SKIP TO MAIN CONTENT SKIPLINK
+                    requires an id tag on your <main> element
+        ===========================================================
+        -->
+        <a href="#mainContent" class="skipLink">Skip to Main Content</a>
+    
+    <!-- 
+        ----------------------------------------------------------------------------------
+        The Header Element 
+        ----------------------------------------------------------------------------------
+    -->
+        <header class="pageHeader">
+            <!-- Centered Logo Element Link-->
+            <a href="index.html">
+                <img src="resources/logo.png" 
+                    ALT="Willow Gardens Logo"
+                    width="128px"
+                    height="128px">
+                
+                <!-- Site Name -->
+                <h1 class="siteNameLogoLink">Willow Gardens</h1>
+            </a>
+
+
+            
+            <!-- 
+                ===================================================
+                        Creating a Main Menu Navigation
+                ===================================================
+             -->
+             <nav aria-label="Main Menu"> 
+                <ul role="menubar"> 
+
+                    <!-- Getting Started Navigation Element -->
+                    <li role="none"><a role="menuitem" href="#" aria-haspopup="true">Getting Started</a> 
+                        <!-- Creating the Getting Started Dropdown -->
+                        <ul aria-label="Getting Started Sub-Menu" role="menu">
+                            <li role="none"><a role="menuitem" href="#" class="deadLink">The Basics of Gardening</a></li>
+                            <li role="none"><a role="menuitem" href="gardening-tips.html">Gardening Tips</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Our Plots Navigation Element -->
+                    <li role="none"><a role="menuitem" href="plots.html" aria-haspopup="true" class="activePage">Our Plots</a>
+                        <!-- Creating the Our Plots Dropdown -->
+                        <ul aria-label="Our Plots Sub-Menu" role="menu">
+                            <li role="none"><a role="menuitem" href="plots.html#apply">Apply for a Plot</a></li>
+                            <li role="none"><a role="menuitem" href="plots.html#info">Plot Information</a></li>
+                            <li role="none"><a role="menuitem" href="plots.html#pricing">Plot Pricing</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Community Navigation Element -->
+                    <li role="none"><a role="menuitem" href="#" aria-haspopup="true">Community</a>
+                        <!-- Creating the Community Dropdown -->
+                        <ul aria-label="Community Sub-Menu" role="menu">
+                            <li role="none"><a role="menuitem" href="#" class="deadLink">Forums</a></li>
+                            <li role="none"><a role="menuitem" href="#" class="deadLink">Get Involved</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- About Us Navigation Element -->
+                    <li role="none"><a role="menuitem" href="#" aria-haspopup="true">About Us</a>
+                        <!-- About Us Dropdown -->
+                        <ul aria-label="About Us Sub-Menu" role="menu">
+                            <li role="none"><a role="menuitem" href="#" class="deadLink">Mission Statement</a></li>
+                            <li role="none"><a role="menuitem" href="#" class="deadLink">Who Are We?</a></li>
+                            <li role="none"><a role="menuitem" href="#contact">Contact Us</a></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+             </nav>
+            
+        </header>
+    
+    <!-- 
+        ----------------------------------------------------------------------------------
+        The Main Element 
+        ----------------------------------------------------------------------------------
+    -->
+    <main id="mainContent">
+    
+        <!-- Page Title -->
+        <article>
+            <h1>Plots</h1>
+            <p>Thank you for your interest in Willow Gardens! 
+                Below you will find <a href="#info">information on our plots</a>, 
+                our <a href="#pricing">pricing plans</a>, and a 
+                form to <a href="#apply">apply for your future plot</a>!
+            </p>
+            <hr>
+        </article>
+        
+        
+        <!-- 
+            -----------
+            Second Article Element: Plot Information
+            -----------
+        -->
+        <article id="info">
+            <h2>About Our Plots</h2>
+                <p>
+                    At Willow Gardens, we strive to ensure your gardening experience the easiest and most fulfilling possible.
+                </p>
+
+                <h3>General Information</h3>
+                <ul>
+                    <li><strong>Size: </strong>Our Garden Plots Measure approximately 20' x 20' (400sq. ft.).</li>
+                    <li><strong>Quantity: </strong>The maximum number of plots per gardener is 4 plots.</li>
+                    <li><strong>Allowed Methods: </strong>Only organic gardening methods are allowed.</li>
+                    <li><strong>Tilling: </strong>We do not till any sections of our gardens which allows gardeners 
+                        to plant perennials such as asparagus and strawberries and leave 
+                        up fences, if desired, throughout the year.</li>
+                </ul>
+                <br>
+
+                <h3>Available Provisions</h3>
+                <ul>
+                    <li>Water is provided on site throughout the season.</li>
+                    <li>Garden tools are available for public use.</li>
+                    <li>Free woodchips are provided for gardener use.</li>
+                    <li>We offer hay and row cover for sale on our application.</li>
+                </ul>
+                <br>
+
+                <h3 id="pricing">Plot Pricing</h3>
+                    <p>
+                        $15, $43, or $78 per plot, per year, depending on your income level, 
+                        size of your household, and or garden family.
+                    </p>
+                    <br>
+
+            <hr>
+        </article>
+
+
+
+        <!-- 
+            -----------
+            Third Article Element: Application Form
+
+            Reqs:
+                - First & Last Name
+                - Phone
+                - Email
+
+                - Starter Seed Pack [Checkbox for Y/N]
+
+                - # of Plots [1-4 DROPDOWN]
+
+                - Garden Team [CHECKBOX]
+            -----------
+        -->
+        <article id="apply">
+            <h2>Apply for a Plot</h2>
+            <p>(All Fields with a <span class="required">*</span> are required) </p>
+            
+            <form action="http://itins3.madisoncollege.edu/echo.php" method="post">
+                <fieldset>
+                    <legend>Your Details: </legend>
+                    
+                    
+                    <!-- 
+                        ====================================================
+                        REGULAR FILL IN THE INPUT
+
+                        Requirements:
+                            - If a Required Field, a span with a * classed as 'required'
+                            - matching ids on inputs with fors on labels
+                        ==================================================== 
+                     -->
+                    
+                    <div class="form-group">
+                        <label for="firstName">First Name<span class="required">*</span></label>
+                        <br>
+                        <input id="firstName" 
+                            type="text" 
+                            name="firstName"
+                            required
+                            placeholder="e.g. Kendra">
+                        <br>
+                        <br>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name<span class="required">*</span></label>
+                        <br>
+                        <input id="lastName" 
+                            type="text" 
+                            name="lastName" 
+                            required
+                            placeholder="e.g. Kindrai"> 
+                        <br>
+                        <br>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address<span class="required">*</span></label>
+                        <br>
+                        <input id="email" 
+                            type="email" 
+                            name="email" 
+                            required
+                            placeholder="e.g. kendra@willowgardens.co.uk">
+                        <br>
+                        <br>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number<span class="required">*</span></label>
+                        <br>
+                        <input id="phone" 
+                            type="text" 
+                            name="phoneNumber" 
+                            required
+                            pattern="^[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            placeholder="e.g. 608-379-4050">
+                        <p class="helpText">Phone number must be 10 digits and include dashes.</p>
+                        <br>
+                        <br>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Plot Information: </legend>
+
+
+
+                    <!-- 
+                        ====================================================
+                        DROPDOWN SELECT ELEMENT
+
+                        Requirements:
+                            - If a Required Field, a span with a * classed as 'required'
+                            - matching ids on inputs with fors on labels
+                            - Look at the first DEFAULT option for delicious info
+                        ==================================================== 
+                     -->
+                     <div class="form-group">
+                        <label for="pickPlots">Select your Desired Number of Plots<span class="required">*</span></label>
+                        <select id="pickPlots" name="pickPlots" required>
+                            <option 
+                                value="" 
+                                disabled 
+                                selected 
+                                hidden> <!-- Disabled means you can't choose it, selected means default, and hidden makes it invisiable in the dropdown, VALUE MUST BE BLANK TO BE REQUIRED ELEMENT-->
+                                    --select--
+                            </option>
+                            <option value="01">One</option>
+                            <option value="02">Two</option>
+                            <option value="03">Three</option>
+                            <option value="04">Four</option>
+                        </select>
+                        <br>
+                        <br>
+                     </div>
+
+
+
+
+
+                    <!-- 
+                    ====================================================
+                    CHECKBOXES
+
+                    Requirements:
+                        - If a Required Field, a span with a * classed as 'required'
+                        - matching ids on inputs with fors on labels
+                    ==================================================== 
+                    -->
+                    <div class="form-group">
+                        <p>Join a Garden Team! (Select All Options you are Interested In)</p>
+                        
+                        <input id="newGardenMentor" type="checkbox" name="newGardenMentor">
+                        <label for="newGardenMentor">New Garden Mentor</label>
+                        <br>
+
+                        <input id="plotMaintenance" type="checkbox" name="plotMaintenance">
+                        <label for="plotMaintenance">Plot Maintenance</label>
+                        <br>
+
+                        <input id="waterMaintenance" type="checkbox" name="waterMaintenance">
+                        <label for="waterMaintenance">Water Maintenance</label>
+                        <br>
+
+                        <input id="equipmentMaintenance" type="checkbox" name="equipmentMaintenance">
+                        <label for="equipmentMaintenance">Equipment Maintenance</label>
+                        <br>
+                        <br>
+                    </div>
+
+                </fieldset>
+
+                <!-- 
+                    ====================================================
+                    RADIO INPUTS
+
+                    Requirements:
+                        - If a Required Field, a span with a * classed as 'required'
+                        - matching ids on inputs with fors on labels
+                    ==================================================== 
+                -->
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Are you Interested in a Starter Seed Pack?</legend>
+                        <input id="yesSeed" type="radio" name="seed" value="yesSeed">
+                        <label for="yesSeed">Yes</label>
+
+                        <input id="noSeed" type="radio" name="seed" value="noSeed">
+                        <label for="noSeed">No</label>
+                    </fieldset>
+                    <br>
+                </div>
+
+
+                <!-- 
+                    ====================================================
+                    SUBMIT BUTTONS
+
+                    Requirements:
+                        - No Hay Nada B)
+                    ==================================================== 
+                    -->
+                <div class="form-group">
+                    <div class="formButtons">
+                        <input type="submit" 
+                            class="btn 
+                                btn-primary 
+                                d-inline-flex 
+                                align-items-center" 
+                            value="Place Order">
+                        
+                        <input type="reset" 
+                            class="btn 
+                                btn-outline-secondary
+                                d-inline-flex 
+                                align-items-center" 
+                            value="Start Over">
+                    </div>
+                </div>
+            </form>
+            
+        </article>
+        <br>
+        
+
+    </main>
+
+
+
+<!-- 
+    ========================================================================================================================================================
+    THE FOOTER ELEMENT
+    AND ALL THE THINGS THAT 
+    GO IN IT.     
+    ========================================================================================================================================================
+-->
+<footer id="footer">
+    <!-- 
+        ----------------------------------------
+        Social Links (Float Left)
+        ---------------------------------------
+     -->
+     <div id="socialLinks">
+        <h3>Keep in Touch!</h3>
+        <!-- Icon Section -->
+        <div id="socialIcons">
+            
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/willowgardens">
+                <img src="resources/instagram-icon.png" alt="Willow Gardens Instagram" height="60em" width="60em">
+            </a>
+
+            <!-- Tiktok -->
+            <a href="https://www.tiktok.com/willowgardens">
+                <img src="resources/tiktok-icon.png" alt="Willow Gardens Tiktok" height="60em" width="60em">
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/willowgardens">
+                <img src="resources/facebook-icon.png" alt="Willow Gardens Facebook" height="60em" width="60em">
+            </a>
+
+
+        </div>
+    </div>
+     
+
+    <!-- 
+        ---------------------------------------
+        Logo For Home Clicking (Centered)
+        --------------------------------------
+    -->
+    <div id="footerLogo" class="centeredText">
+        <h3><a href="index.html">
+            <img src="resources/footer-logo.png" ALT="Willow Gardens With Border" width="128px" height="128px">
+            <span class="centeredText">Willow Gardens</span>
+        </a> </h3>
+        
+    </div>
+
+
+    <!-- 
+        ---------------------------------------
+        Contact Us Links (float right)
+        ---------------------------------------
+    -->
+    <div id="contact">    
+        <h3 class="rightAlignText">Contact Us</h3>
+        
+        <!-- Phone -->
+        <a href="tel:2627231187">
+            <p class="rightAlignText">Phone: (262) 723-1187</p>
+        </a>
+        
+        <!-- Email -->
+        <a href="mailto:willowgardens@willow.co.uk">
+            <p class="rightAlignText">Email: willowgardens@willow.co.uk</p>
+        </a>
+    </div>
+
+    
+  
+
+
+</footer>
+</body>
+</html>

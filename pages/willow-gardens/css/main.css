@@ -1,0 +1,519 @@
+/* 
+    Colour Pallete
+
+    Primary (Azúcar Café):
+        #B5714C
+
+    Secondary (Verde Casi-Oscuro):
+        #726B4F
+
+    Light Neutral (Manilla):
+        #E4DFB7
+
+    Dark Neutral (Verde Oscuro):
+        #211E0B
+
+    Error (Rojo):
+        #B84444
+
+    Blancita:
+        #f9f9f9
+
+*/
+
+
+/*
+    CSS Reset
+    Adopted from: http://meyerweb.com/eric/tools/css/reset/
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    line-height: 1.7;
+}
+
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2em;
+    margin: .5em 0;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+article, section {
+    width: 45%;
+    margin: 0 auto;
+}
+
+p, article ul li, article form {
+    margin: .7em 0;
+    font-family: Verdana, sans-serif;
+}
+
+img {
+    max-width: 100%; /* make images responsive */
+    padding: .4em;
+    margin: 0 auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color:#B5714C; /* Primary (Azúcar Café) */
+}
+
+/* Centered Text */
+.centeredText {
+    text-align: center;
+}
+
+
+
+/* ====================================================================== */
+
+/* Float Right */
+.floatRight {
+    float: right;
+}
+
+/* Float Left */
+.floatLeft {
+    float: left;
+}
+
+/* Float Clear */
+.floatClear {
+    clear: both;
+}
+
+
+/* ====================================================================== */
+/* Two Collumn Element */
+.twoColumn {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+.twoColumn > * { /* `>* ` Meaning anything that is an IMMEDIATE descendant/child element of this */
+    flex: 1;
+}
+
+.twoColumn img {
+    height: auto;
+}
+
+.twoColumn ul {
+    list-style: none;
+}
+
+#plotButtons {
+    float:right;
+    margin-bottom: 2em;
+}
+
+hr {
+    clear: both;
+}
+
+/* ====================================================================== */
+
+/* Images in Articles */
+.articleImage {
+    display: inline-block;
+    width: 20vw;
+    box-shadow: .3em .3em .5em #211e0b67; /*Dark Neutral (Verde Oscuro): */
+    border: 1em #211E0B; /* Dark Neutral (Verde Oscuro):*/
+    border-radius: .5em;
+    box-sizing: border-box;
+    
+    
+}
+
+
+/* ====================================================================== */
+/* Primary Button Stylings */
+    .btn-primary {
+        color: white; /* Light Neutral (Manilla): */
+        background-color: #996041; /* Primary (Azúcar Café) MODIFIED */
+        border-color: #211E0B; /* Dark Neutral (Verde Oscuro): */
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus-within {
+        color: #211E0B; /* Dark Neutral (Verde Oscuro): */
+        background-color: white; 
+        border-color: #211E0B; /* Dark Neutral (Verde Oscuro): */
+    }
+
+/* ====================================================================== */
+
+/* Secondary Button Stylings */
+.btn-outline-secondary {
+    color: #211E0B; /* Dark Neutral (Verde Oscuro): */
+    background-color: #E4DFB7; /* Light Neutral (Manilla): */
+    border-color: #726B4F; /* Secondary (Verde Casi-Oscuro): */
+    
+    
+}
+
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus-within {
+    color: #211E0B; /* Dark Neutral (Verde Oscuro): */
+    background-color: white; 
+    border-color: #211E0B; /* Dark Neutral (Verde Oscuro): */
+}
+
+/* ====================================================================== */
+
+/* All Dead Link Buttons */
+a.deadLink button:hover,
+a.deadLink button:focus-within {
+    text-decoration: line-through;
+    color: #E4DFB7; /* Light Neutral (Manilla): */
+    background-color: #B84444; /* Error (Rojo): */
+    border-color: #211E0B; /* Dark Neutral (Verde Oscuro):*/
+    --bs-btn-focus-box-shadow: 0 0 0 0.25rem #b8444491 /* Error (Rojo): */, .5;
+
+}
+
+
+
+
+/* 
+    =============================================================================================
+                                STYLING THE SKIPLINK
+
+        Skiplinking Sillyness. Just set it way the fuck in the middle of nowhere
+        so nobody can see it, but when screenreaders/anyone tabs to it then it appears!
+    =============================================================================================
+*/
+.skipLink {
+    position: absolute;
+    left: -1000px;
+}
+
+.skipLink:focus,
+.skiplink:active {
+    left: 0;
+}
+
+
+/* 
+    =============================================================================================
+                                STYLING THE NAVIGATION
+
+        Yeah girlfriend, this is what we've been waitng for :D 
+            *pq dijé así tan gringa??
+    =============================================================================================
+*/
+nav {
+    background-color: #211E0B; /* Dark Neutral (Verde Oscuro) */
+  }
+  
+    /* <ul> elements */
+    nav ul {
+        display: flex; /* Acts like a float */
+        list-style: none;
+        justify-content: center;
+    }
+
+        /* <li> elements */
+        nav li {
+            background-color: #211E0B; /* Dark Neutral (Verde Oscuro) */
+            position: relative;
+            transition: all .3s; /* Applies a transition on the hovers*/
+        }
+
+        /* ACTIVE PAGE <li> <a class="activePage"> elements */
+        nav li a.activePage {
+            text-decoration: underline;
+        }
+        
+        nav li:hover,
+        nav li:focus-within {
+            background-color: #B5714C; /* Primary (Azúcar Café) */
+        }
+  
+            /* <a> elements in a <li> */
+            nav li a {
+                text-decoration: none;
+                color: #E4DFB7; /* Light Neutral (Manilla) */
+                display: block; /* need anchor element to be block so they take padding */
+                padding: 1em; /* The Padding should exist on the <a> elements, no the <li> (Makes it easier to click on links!)*/
+            }
+            
+            /* <li> <a> While Hovered Styling! */
+            nav li a:hover,
+            nav li a:focus-within {
+                color: #E4DFB7; /* Light Neutral (Manilla) */
+            }
+
+/* 
+    ----------------------------------------------------------------------------
+                    STYLING THE SUBMENU!!! (MUY IMPORTANTE, AMOR)
+    ----------------------------------------------------------------------------
+*/
+
+/* While Parent Item is not Hovered Over */
+nav ul li ul,
+nav ul li ul:hover {
+    position: absolute;
+    min-width: 10.3em; /* Scales Relative to Font Size!*/
+    margin-top: 0; /* Keeps it close to under the main menu*/
+    left: 0;
+    display: none; /* Will not be displayed by Default */
+    background-color: #E4DFB7; /* Light Neutral (Manilla) */
+    color: #211E0B; /* Dark Neutral (Verde Oscuro) */
+    z-index: 9999; /* Ensuring the Navigation is positioned above EVERYTHING EVER */
+}
+
+/* While Parent Item is Hovered Over */
+nav ul li:hover ul,
+nav ul li ul:hover,
+nav ul li:focus-within ul { /* `ul li:focus-within ul` | If anything in this child has focus, make the menu be a block (for tab navigation) */
+    background-color: #E4DFB7; /* Light Neutral (Manilla) */
+    display: block; /* Displays the niño dropdowns */
+    border-bottom-left-radius: .5em; /* Will Round the bottom left & right*/
+    border-bottom-right-radius: .5em;
+}
+
+/* Sub Menu Non Hover/Select*/
+nav li ul li {
+    background-color: #E4DFB7; /* Light Neutral (Manilla) */
+    
+    
+}
+
+/* Sub Menu Hovers/ Select */
+nav li ul li:hover,
+nav li ul li:focus-within {
+    background-color: #726B4F; /* Secondary (Verde Casi-Oscuro) */
+}
+
+    /* <a> elements in a <li> In the Sub Menu, NON HOVER */
+    nav li ul li a {
+        color: #211E0B; /* Dark Neutral (Verde Oscuro) */
+        
+    }
+
+    /* <a> elements in a <li> In the Sub Menu, WHILE HOVER/SELECT */
+    nav li ul li a:hover,
+    nav li ul li a:focus-within {
+        color: #E4DFB7; /* Light Neutral (Manilla) */
+        
+    }
+
+/* `:last-child` | Selects the last item of the selected type (in this case, the last nav element displayed) */
+nav li ul li:last-child {
+    border-bottom-left-radius: .5em; /* Will Round the bottom left & right*/
+    border-bottom-right-radius: .5em;
+}
+
+/* The Dead Link Styling */
+nav li ul li:hover a.deadLink,
+nav li ul li:focus-within a.deadLink {
+    background-color: #B84444; /* Error (Rojo) */
+    text-decoration: line-through;
+}
+
+/* `:last-child` | DEAD LINK Selects the last item of the selected type (in this case, the last nav element displayed) */
+nav li ul li:last-child a.deadLink {
+    border-bottom-left-radius: .5em; /* Will Round the bottom left & right*/
+    border-bottom-right-radius: .5em;
+}
+
+/* 
+    ========================================================================================================================================================
+    LINK CUSTOMIZATION <a> ELEMENTS
+    ========================================================================================================================================================
+*/
+    /* 
+        ----------------------------------------------------------------------------------
+        General Links
+        ----------------------------------------------------------------------------------
+    */
+    a:link { 
+        text-decoration: none; 
+    }
+
+    a:visited { 
+        text-decoration: none; 
+    }
+
+    a:hover { 
+        text-decoration: none; 
+    }
+
+    a:active { 
+        text-decoration: none; 
+    }
+
+    /* a.deadLink {
+        color: #B84444;  Error (Rojo) 
+    } */
+
+    /* 
+        ----------------------------------------------------------------------------------
+        Site Name Logo Link Text 
+        ----------------------------------------------------------------------------------
+    */
+    .siteNameLogoLink {
+        color: #211E0B; /* Dark Neutral (Verde Oscuro) */
+    }
+
+/* 
+    ========================================================================================================================================================    
+    Header Elements 
+    ========================================================================================================================================================*/
+    /* 
+        ----------------------------------------------------------------------------------
+        All Header Elements
+        ----------------------------------------------------------------------------------
+    */
+    .pageHeader {
+        width: 100%;
+        margin: auto;
+        background-color: #E4DFB7; /* Light Neutral (Manilla) */
+    }
+
+
+/* 
+    ========================================================================================================================================================
+    All Body Elements Use Handlee (From Google Font Family) 
+    ========================================================================================================================================================
+*/
+
+body {
+    font-family: "Handlee", system-ui;
+    background-color: #f9f9f9; /* Blancita */
+}
+
+/* Class Element Colour Specifications */
+
+    /* Primary Buttons */
+    .PrimaryButtonColour {
+        background-color:aqua;
+    }
+
+
+
+/***********************************
+Sticky Footer!
+
+WHAT DOES IT DO KENDRA?!??!?
+    BAsically this will force the footer to be AT MINIMUM the height of the browser.
+    This will solve strange little spacing issues.
+
+
+https://css-tricks.com/couple-takes-sticky-footer/
+http://css-tricks.com/snippets/css/a-guide-to-flexbox
+**********************************/
+html, body {
+    min-height: 100vh; /* 100% viewbox height*/
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto; /* flex-grow, flex-shrink, flex-bais */
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+
+
+/* 
+================================================================================
+                PLACEHOLDER COLOUR CONTRAST REQUIREMENT
+================================================================================
+*/
+input::placeholder {
+    color: #767676;
+  }
+
+/* 
+    =============================================================================================
+                                STYLING REQUIRED FORM ELEMENTS
+
+        Use a <span class="required"> to the Asterisks on form fields
+    =============================================================================================
+*/
+.required {
+    color: #f40404;
+}
+
+
+/* 
+    =============================================================================================
+                                STYLING THE FOOTER
+
+        All the specific footer stylings :D
+    =============================================================================================
+*/
+#footer {
+    background-color: #211E0B; /* Dark Neutral (Verde Oscuro) */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 1em;
+ 
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer p,
+footer a {
+    color: #E4DFB7; /* Light Neutral (Manilla) */
+}
+
+.rightAlignText {
+    text-align: right;
+}
+
+/* Centered Text 2 (Para footer) */
+#footerLogo span {
+    display: block;
+    margin: 0 auto;
+}
+
+/* The Social Icons */
+#socialIcons {
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,39 @@
+/* 
+    ================================================================
+    Creating the Font Family
+*/
+@font-face {
+    font-family: 'Monocraft';
+    src: url('/resources/fonts/Monocraft.ttc');
+}
+
+
+
+
+/* 
+    ================================================================
+    The Class Spans for Fonts
+*/
+span.minecraft {
+    font-family: Monocraft;
+}
+span.consolas {
+    font-family: Consolas;
+}
+
+
+/*  
+    ================================================================
+    The Language Icon Button
+*/
+img#language-icon {
+    width: 1em;
+    height: 1em;
+}
+
+/* 
+    Hidden Class
+*/
+.hidden {
+    display: none;
+}

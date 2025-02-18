@@ -1,0 +1,13 @@
+article ul {
+    list-style: none;
+}
+
+article a {
+    text-decoration: none;
+    color:#996041; /* Primary (Azúcar Café) MODIFIED */
+    font-weight: 600;
+}
+
+input[type=text], input[type=number], input[type=email] {
+    width:25em;
+}
