@@ -3,8 +3,14 @@
     17 feb 2025
 */
 
-// Get Current Language
+let currentLanguage = "lang-en";
 
+// Get Current Language
+const getCurrentLang = () => {
+    "use strict";
+
+    return currentLanguage;
+}
 // Change Language Event Listeners
 const languageToggleListener = () => {
     "use strict";
@@ -21,6 +27,9 @@ const changeDisplayLanguage = event => {
 
     // Get the id from the event, set page language
     let pageLanguage = event.currentTarget.getAttribute('data-language');
+    
+    // Set Current Global Display Language
+    currentLanguage = pageLanguage;
 
     // Determine Language
     if (pageLanguage == "lang-en") {
