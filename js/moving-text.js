@@ -19,8 +19,8 @@ const displayHeader = () => {
         strings = [
             "<span class='minecraft'>/data get entity @s 3d0e51fc-</span>",
             "<span class='consolas'>this.me = 'Kendra'</span>",
-            "<span lang='es'>¡Hola, soy Kendra!</span><span lang='en' class='hidden'>Hi! I'm Kendra.</span>",
-            "<span lang='en'>Hi! I'm Kendra.</span><span lang='es' class='hidden'>¡Hola, soy Kendra!</span>" 
+            "<span lang='es'>Hola, soy Kendra</span><span lang='en' class='hidden'>Hi, I'm Kendra</span>",
+            "<span lang='en'>Hi, I'm Kendra</span><span lang='es' class='hidden'>Hola, soy Kendra</span>" 
         ];
         
     } else if (currentLanguage == "lang-es") {
@@ -29,8 +29,8 @@ const displayHeader = () => {
         strings = [
             "<span class='minecraft'>/data get entity @s 3d0e51fc-</span>",
             "<span class='consolas'>this.me = 'Kendra'</span>",
-            "<span lang='es' class='hidden'>¡Hola, soy Kendra!</span><span lang='en'>Hi! I'm Kendra.</span>",
-            "<span lang='en' class='hidden'>Hi! I'm Kendra.</span><span lang='es'>¡Hola, soy Kendra!</span>" 
+            "<span lang='es' class='hidden'>Hola, soy Kendra</span><span lang='en'>Hi, I'm Kendra</span>",
+            "<span lang='en' class='hidden'>Hi, I'm Kendra</span><span lang='es'>Hola, soy Kendra</span>" 
         ];
 
     }

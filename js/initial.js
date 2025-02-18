@@ -7,14 +7,14 @@
 const init = () => {
     "use strict";
 
-    // Call Display Header
-    displayHeader();
-
     // Call Language Settings
     languageToggleListener();
 
     // Set Default Language (en)
     enableEnglish();
+
+    // Call Display Header
+    displayHeader();
 }
 
 

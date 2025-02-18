@@ -42,3 +42,10 @@ span.minecraft {
 span.consolas {
     font-family: Consolas;
 }
+
+/* 
+    Hidden Class
+*/
+.hidden {
+    display: none;
+}
