@@ -38,8 +38,8 @@ const displayHeader = () => {
     // Creating the new Auto Typer
     let typed = new Typed(".auto-heading-text", {
         strings,
-        typeSpeed : 20,
-        backSpeed : 5,
+        typeSpeed : 35,
+        backSpeed : 7,
         loop : false
     })
 

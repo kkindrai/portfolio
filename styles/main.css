@@ -1,5 +1,14 @@
 /* 
     ================================================================
+    Establishing the Background
+*/
+body {
+    background-image: url("/resources/images/background.png");
+}
+
+
+/* 
+    ================================================================
     Creating the Font Family
 */
 @font-face {
@@ -37,3 +46,91 @@ img#language-icon {
 .hidden {
     display: none;
 }
+
+
+
+
+
+
+
+
+/* 
+    =============================================================================================
+                                STYLING THE NAVIGATION
+
+        Yeah girlfriend, this is what we've been waitng for :D 
+    =============================================================================================
+*/
+nav {
+    background-color: #3539c2; /* Dark Neutral (Verde Oscuro) */
+  }
+  
+    /* <ul> elements */
+    nav ul {
+        display: flex; /* Acts like a float */
+        list-style: none;
+        justify-content: center;
+    }
+
+        /* <li> elements */
+        nav li {
+            background-color: #211E0B; /* Dark Neutral (Verde Oscuro) */
+            position: relative;
+            transition: all .3s; /* Applies a transition on the hovers*/
+            padding-left: 4em;
+            padding-right: 4em;
+        }
+
+        /* ACTIVE PAGE <li> <a class="active-page-link"> elements */
+        nav li a.active-page-link {
+            text-decoration: underline;
+        }
+        
+        nav li:hover,
+        nav li:focus-within {
+            background-color: #B5714C; /* Primary (Azúcar Café) */
+        }
+  
+            /* <a> elements in a <li> */
+            nav li a {
+                text-decoration: none;
+                color: #E4DFB7; /* Light Neutral (Manilla) */
+                display: block; /* need anchor element to be block so they take padding */
+                padding: 1em; /* The Padding should exist on the <a> elements, no the <li> (Makes it easier to click on links!)*/
+            }
+            
+            /* <li> <a> While Hovered Styling! */
+            nav li a:hover,
+            nav li a:focus-within {
+                color: #E4DFB7; /* Light Neutral (Manilla) */
+            }
+
+
+
+
+/* 
+    ========================================================================================================================================================
+    LINK CUSTOMIZATION <a> ELEMENTS
+    ========================================================================================================================================================
+*/
+    /* 
+        ----------------------------------------------------------------------------------
+        General Links
+        ----------------------------------------------------------------------------------
+    */
+    a:link { 
+        text-decoration: none; 
+    }
+
+    a:visited { 
+        text-decoration: none; 
+    }
+
+    a:hover { 
+        text-decoration: none; 
+    }
+
+    a:active { 
+        text-decoration: none; 
+    }
+
